@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en us">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/97a3d525bd.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <h3 class="text-left"><b>Survey</b></h3>
+    <hr>
+    <h4>Name</h4>
+    <div class="form-group">
+        <input type="text" class="form-control" id="name" required>
+    </div>
+    <h4>Picture</h4>
+    <div class="form-group">
+        <input type="text" class="form-control" id="picture" required>
+    </div>
+    <hr>
+    <form>
+        <h4>1. You are the creative type</h4>
+        <fieldset id="1">
+            <label>Strongly Disagree</label>
+            <input type="radio" value="1" name="1">
+            <input type="radio" value="2" name="1">
+            <input type="radio" value="3" name="1">
+            <input type="radio" value="4" name="1">
+            <input type="radio" value="5" name="1">
+            <label>Strongly Agree</label>
+        </fieldset>
+
+        <h4>2. You like your beat fast and your bass down low</h4>
+        <fieldset id="2">
+            <label>Strongly Disagree</label>
+            <input type="radio" value="1" name="2">
+            <input type="radio" value="2" name="2">
+            <input type="radio" value="3" name="2">
+            <input type="radio" value="4" name="2">
+            <input type="radio" value="5" name="2">
+            <label>Strongly Agree</label>
+        </fieldset>
+
+        <h4>3. You prefer real sports over Wii sports</h4>
+        <fieldset id="3">
+            <label>Strongly Disagree</label>
+            <input type="radio" value="1" name="3">
+            <input type="radio" value="2" name="3">
+            <input type="radio" value="3" name="3">
+            <input type="radio" value="4" name="3">
+            <input type="radio" value="5" name="3">
+            <label>Strongly Agree</label>
+        </fieldset>
+        <h4>4. It's only stealing if you get caught.</h4>
+        <fieldset id="4">
+            <label>Strongly Disagree</label>
+            <input type="radio" value="1" name="4">
+            <input type="radio" value="2" name="4">
+            <input type="radio" value="3" name="4">
+            <input type="radio" value="4" name="4">
+            <input type="radio" value="5" name="4">
+            <label>Strongly Agree</label>
+        </fieldset>
+        <h4>5. Your best programming work is setting the time on the oven</h4>
+        <fieldset id="5">
+            <label>Strongly Disagree</label>
+            <input type="radio" value="1" name="5">
+            <input type="radio" value="2" name="5">
+            <input type="radio" value="3" name="5">
+            <input type="radio" value="4" name="5">
+            <input type="radio" value="5" name="5">
+            <label>Strongly Agree</label>
+        </fieldset>
+        <h4>6. Everyone on the road should yield to you</h4>
+        <fieldset id="6">
+            <label>Strongly Disagree</label>
+            <input type="radio" value="1" name="6">
+            <input type="radio" value="2" name="6">
+            <input type="radio" value="3" name="6">
+            <input type="radio" value="4" name="6">
+            <input type="radio" value="5" name="6">
+            <label>Strongly Agree</label>
+        </fieldset>
+        <h4>7. Trump fan?</h4>
+        <fieldset id="7">
+            <label>Strongly Disagree</label>
+            <input type="radio" value="1" name="7">
+            <input type="radio" value="2" name="7">
+            <input type="radio" value="3" name="7">
+            <input type="radio" value="4" name="7">
+            <input type="radio" value="5" name="7">
+            <label>Strongly Agree</label>
+        </fieldset>
+        <h4>8. I'll show you mine if you show me yours</h4>
+        <fieldset id="8">
+            <label>Strongly Disagree</label>
+            <input type="radio" value="1" name="8">
+            <input type="radio" value="2" name="8">
+            <input type="radio" value="3" name="8">
+            <input type="radio" value="4" name="8">
+            <input type="radio" value="5" name="8">
+            <label>Strongly Agree</label>
+        </fieldset>
+        <h4>9. An eye for an eye</h4>
+        <fieldset id="9">
+            <label>Strongly Disagree</label>
+            <input type="radio" value="1" name="9">
+            <input type="radio" value="2" name="9">
+            <input type="radio" value="3" name="9">
+            <input type="radio" value="4" name="9">
+            <input type="radio" value="5" name="9">
+            <label>Strongly Agree</label>
+        </fieldset>
+        <h4>10. This survey will never find me a friend</h4>
+        <fieldset id="10">
+            <label>Strongly Disagree</label>
+            <input type="radio" value="1" name="10">
+            <input type="radio" value="2" name="10">
+            <input type="radio" value="3" name="10">
+            <input type="radio" value="4" name="10">
+            <input type="radio" value="5" name="10">
+            <label>Strongly Agree</label>
+        </fieldset>
+
+    </form>
+    <br>
+
+    <button type="submit" class="btn btn-primary btn-lg btn-block submit"><span class="glyphicon glyphicon-ok-sign"
+                                                                                aria-hidden="true"></span></span> Submit
+    </button>
+    <hr>
+
+    <footer class="footer">
+        <div class="container">
+            <p><a href="/api/friends">API Friends List | </a><a href="https://github.com/Kongle989/friendfinder">
+                GitHub Repo <i class="fa fa-github" aria-hidden="true"></i></a></p>
+        </div>
+    </footer>
+
+</div>
+<div id="show-modal" class="modal fade">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Your Match</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Lets have some fun</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">I don't think so</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    $(".submit").on("click", function (event) {
+        event.preventDefault();
+
+        // RETRIEVE ANSWERS FROM FORM
+        let answer = [],
+            name = $('#name').val().trim(),
+            picture = $('#picture').val().trim();
+        for (let i = 1; i <= 10; i++) {
+            let radio = $('input[name=' + i + ']:checked').val();
+            if (radio !== undefined) answer.push(radio);
+            else {
+                // MAKING SURE ALL QUESTIONS GET ANSWERED
+                alert('You forgot to answer 1 or more questions.');
+                return $('input[name=' + i + ']').focus();
+            }
+        }
+        // CHECK IF NAME IS FILLED OUT
+        if (name === '') {
+            alert('You forgot your name!');
+            return $('#name').focus();
+        }
+        // CHECK IF PICTURE IF FILLED OUT
+        if (picture === '') {
+            alert('You forgot your picture!');
+            return $('#picture').focus();
+        }
+        let newUser = {
+            name: name,
+            photo: picture,
+            scores: answer
+        };
+
+// APIROUTE POST
+        $.post(location.origin + "/api/friends", newUser, function (data) {
+            console.log(data);
+            modalDisplay(data);
+        })
+    });
+
+    function modalDisplay(match) {
+        $(".modal-body").append("<p>" + match.name + "</p>");
+        $(".modal-body").append('<img src="' + match.photo + '"/>');
+        $("#show-modal").modal("show");
+    }
+
+</script>
+
+</body>
+</html>
